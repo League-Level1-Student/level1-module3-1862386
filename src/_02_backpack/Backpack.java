@@ -15,13 +15,12 @@ public class Backpack {
 		// the putInBackpack(...) methods
 		Pencil bob = new Pencil ();
 		putInBackpack (bob);
-		goToSchool();
 		Ruler jim = new Ruler ();
 		putInBackpack (jim);
-		goToSchool();
 		Textbook tin = new Textbook ();
 		putInBackpack (tin);
 		goToSchool();
+		
 	}
 
 
