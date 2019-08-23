@@ -1,3 +1,5 @@
+
+int pipeGap = 50;
 int pipeX = 0;
 int birdx = 50;
 int birdy = 0;
@@ -14,8 +16,16 @@ void draw() {
   ellipse(birdx,birdy,30,30); 
   fill(0,255,0);
   rect(pipeX,0,30,300);
+  rect(pipeX,0,0,0);
    birdy = birdy + birdYVelocity;
    birdYVelocity = birdYVelocity + gravity;
+   pipeX+=5;
+   if (pipeX >= 800) {
+     pipeX = 0;
+     int pipeX = (int) random(100, 400);
+   }
+
+   
 }
 void mousePressed() {
 birdYVelocity = -10; 
